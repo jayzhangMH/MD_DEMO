@@ -1,0 +1,63 @@
+<!--通讯录begin-->
+<div class="User_list" style="display: none;"  id="platform-right-contact">
+    <p class="User_title aligncenter">请选择您要添加的人员</p>
+    <div class="TopBar mart10">
+        <div class="clearfix">
+            <span class="block Cur_Word marl10 mart5 floatleft" style="display: none;"></span>
+            <div class="search floatright ie-css3 marr10"><!--加 current，显示搜索结果框-->
+                <input type="text" placeholder="搜索" id="contactKeywords">
+            </div>
+        </div>
+        <!--姓名首字母检索begin-->
+        <table class="CheckWord mart10 clearfix">
+            <tr>
+                <td dir="A">A</td>
+                <td dir="B">B</td>
+                <td dir="C">C</td>
+                <td dir="D">D</td>
+                <td dir="E">E</td>
+                <td dir="F">F</td>
+                <td dir="G">G</td>
+                <td dir="H">H</td>
+                <td dir="I">I</td>
+                <td dir="J">J</td>
+            </tr>
+            <tr>
+                <td dir="K">K</td>
+                <td dir="L" class="disabled">L</td>
+                <td dir="M">M</td>
+                <td dir="N">N</td>
+                <td dir="O">O</td>
+                <td dir="P">P</td>
+                <td dir="Q">Q</td>
+                <td dir="R">R</td>
+                <td dir="S">S</td>
+                <td dir="T">T</td>
+            </tr>
+            <tr>
+                <td dir="U">U</td>
+                <td dir="V">V</td>
+                <td dir="W">W</td>
+                <td dir="X">X</td>
+                <td dir="Y">Y</td>
+                <td dir="Z">Z</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <!--姓名首字母检索over-->
+        <div class="nav nav_normal clearfix color-8">
+            <em class="borderBt"></em>
+            <a class="current" href="javascript:;" dir="employee">人员</a>
+            <a href="javascript:;" dir="role">审批角色</a>
+        </div>
+    </div>
+    <div class="jscroll" id="contactDataDIV">
+        <ul class="User_ul" id="contactDataUL">
+
+        </ul>
+    </div>
+</div>
+<!--通讯录over-->

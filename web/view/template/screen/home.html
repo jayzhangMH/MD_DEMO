@@ -1,0 +1,86 @@
+<!--首页卡片begin-->
+<div id="homeScreen" style="width:1000px;position: absolute;top:50%;display: none;">
+    <div class="top_board clearfix" id="myTipCount">
+        <div class="floatleft mart10">
+            <p class="marl10">我的申请</p>
+            <ul class="aligncenter">
+                <li dir="pass"><a href="javascript:;"><em class="Titillium" dir="passCount">0</em>已通过</a></li>
+                <li dir="overrule"><a href="javascript:;"><em class="Titillium" dir="overruleCount">0</em>未通过</a></li>
+                <li dir="confirm"><a href="javascript:;"><em class="Titillium" dir="confirmCount">0</em>待确认</a></li>
+            </ul>
+        </div>
+        <div class="floatright mart10">
+            <p class="marl10">关于我的</p>
+            <ul class="aligncenter">
+                <li dir="task"><a href="javascript:;"><em class="Titillium" dir="taskCount">0</em>待审批</a></li>
+                <li dir="manage"><a href="javascript:;"><em class="Titillium" dir="manageCount">0</em>待经办</a></li>
+                <li dir="share"><a href="javascript:;"><em class="Titillium" dir="shareCount">0</em>未读通知</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--卡片组begin-->
+    <div class="card_out">
+        <a class="Icon ico-q homeHelp" href="javascript:;" style="display: none;"></a>
+        <div class="r_btn" id="homeDataControl" style="display: none;">
+            <!--<a class="Icon ico-q" href="javascript:;"></a>-->
+            <a class="Icon ico-re homeRefresh disabled" href="javascript:;"></a>
+            <a class="Icon ico-prev homePrevPage disabled" href="javascript:;"></a>
+            <a class="Icon ico-next homeNextPage disabled" href="javascript:;"></a>
+        </div>
+        <div style="top:0;" class="card_box_in" page="1"><!--控制 card_box_in 的 top 来实现上下滚动-->
+
+        </div>
+    </div>
+    <!--卡片组over-->
+
+    <div style="display: none;;" class="help_box">
+        <div class="help_inner">
+            <a title="关闭" class="off font16 closeHelp" href="javascript:;">×</a>
+            <p class="help_title font14">帮助</p>
+            <div class="help_card">
+                <div class="help_mask"><img src="../img/help_mask.png"></div>
+                <ul class="card_list clearfix">
+                    <li class="box card_theme1 animate">
+                        <div class="card_in">
+                            <div class="card_title alignright">
+                                <p class="alignright">
+                                    <span class="floatleft">付款申请</span>
+                                    <span>审</span>
+                                </p>
+                                <div class="card_txt">
+                                    <span class="UserImg inlineblock floatleft ie-css3"><img src="" id="helpUserImg"></span>
+                                    <p class="card_number">FK-2014-1215</p>
+                                    <p>2014-12-01 13:34</p>
+                                </div>
+                            </div>
+                            <div class="card_in_main">
+                                <p class="color-3"><span class="color-8">审批人 ：</span><em id="helpUserName">&nbsp;</em></p>
+                                <p class="color-3 txt_hidden"><span class="color-8">部&nbsp;&nbsp;&nbsp;&nbsp;门：</span><em id="helpUserDept">&nbsp;</em></p>
+                            </div>
+                            <div class="card_time">
+                                <div class="process_bar"><span style="width:50%;" class="process_bar_in"></span></div>
+                                <p><i>2/4</i></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="help_bottom">
+                <p class="p-top20">*单据状态：新版快捷审批采用不同颜色用来区分相应状态的单据</p>
+                <div class="mart20">
+                    <span><i class="point point_1"></i>未通过</span>
+                    <span class="marl20"><i class="point point_2"></i>已通过</span>
+                    <span class="marl20"><i class="point point_3"></i>待审批</span>
+                    <span class="marl20"><i class="point point_4"></i>待经办</span>
+                    <span class="marl20"><i class="point point_5"></i>未读传阅</span>
+                    <span class="marl20"><i class="point point_6"></i>待确认</span>
+                    <span class="marl20"><i class="point point_7"></i>未读</span>
+                </div>
+                <div class="help_bt mart20">
+                    <p>*单据类型：申（我的申请）、审（需我审批）、办（需我经办）、传（传阅至我）</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--首页卡片over-->
