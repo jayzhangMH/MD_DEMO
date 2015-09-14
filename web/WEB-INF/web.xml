@@ -6,6 +6,7 @@
     <display-name>
         MD-OA
     </display-name>
+
     <filter>
         <filter-name>xss</filter-name>
         <filter-class>org.guiceside.web.dispatcher.XSSFilter</filter-class>
@@ -14,6 +15,7 @@
         <filter-name>xss</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
     <filter>
         <filter-name>guice</filter-name>
         <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
@@ -22,6 +24,7 @@
         <filter-name>guice</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
     <filter>
         <filter-name>guiceSideFilter</filter-name>
         <filter-class>org.guiceside.web.dispatcher.GuiceSideFilter</filter-class>
@@ -34,7 +37,6 @@
         <filter-name>guiceSideFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-
 
     <filter>
         <filter-name>DruidWebStatFilter</filter-name>
@@ -86,10 +88,6 @@
         <url-pattern>/sys/*</url-pattern>
     </filter-mapping>
 
-
-
-
-
     <filter>
         <filter-name>guiceSideDispatcher</filter-name>
         <filter-class>org.guiceside.web.dispatcher.FilterDispatcher</filter-class>
@@ -120,13 +118,12 @@
         <url-pattern>/sys/*</url-pattern>
     </filter-mapping>
 
-
-
     <servlet>
         <servlet-name>JspSupportServlet</servlet-name>
         <servlet-class>org.guiceside.web.view.JspSupportServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+
     <servlet>
         <servlet-name>DruidStatView</servlet-name>
         <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>
@@ -140,7 +137,6 @@
         <url-pattern>/druid/*</url-pattern>
     </servlet-mapping>
 
-
     <jsp-config>
         <taglib>
             <taglib-uri>/joddform</taglib-uri>
@@ -151,7 +147,6 @@
             <taglib-location>/WEB-INF/tld/guiceSide.tld</taglib-location>
         </taglib>
     </jsp-config>
-
 
     <listener>
         <listener-class>org.guiceside.web.listener.DefaultGuiceSideListener</listener-class>
@@ -165,16 +160,18 @@
     <listener>
         <listener-class>com.mingdao.web.startup.PlatformSessionListener</listener-class>
     </listener>
+
     <welcome-file-list>
         <welcome-file>/view/index.html</welcome-file>
     </welcome-file-list>
+
     <error-page>
         <error-code>404</error-code>
         <location>/view/common/404.html</location>
     </error-page>
-
     <error-page>
         <error-code>500</error-code>
         <location>/view/common/500.html</location>
     </error-page>
+
 </web-app>

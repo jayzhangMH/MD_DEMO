@@ -6,11 +6,8 @@ import com.mingdao.common.UserSession;
 import com.mingdao.sys.entity.SysUser;
 import com.mingdao.sys.service.SysUserService;
 import com.mingdao.web.support.ActionSupport;
-import org.guiceside.commons.Page;
 import org.guiceside.commons.lang.DateFormatUtil;
-import org.guiceside.commons.lang.StringUtils;
 import org.guiceside.persistence.hibernate.dao.hquery.Selector;
-import org.guiceside.web.action.BaseAction;
 import org.guiceside.web.annotation.*;
 
 import java.util.ArrayList;
@@ -21,7 +18,7 @@ import java.util.List;
  * Created by IntelliJ IDEA.
  * User: zhenjiaWang
  * Date: 12-7-12
- * Time: 下午9:49
+ * Time: 下午9:49extends ActionSupport<SysUser>
  * To change this template use File | Settings | File Templates.
  */
 @Action(name = "user", namespace = "/sys")

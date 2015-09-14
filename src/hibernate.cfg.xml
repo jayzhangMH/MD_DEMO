@@ -10,7 +10,7 @@
     <session-factory>
         <property name="driver_class">com.mysql.jdbc.Driver</property>
         <property name="url">
-            jdbc:mysql://127.0.0.1:3306/mddemo?useUnicode=true&amp;characterEncoding=UTF-8
+            jdbc:mysql://172.16.21.69:3306/mddemo?useUnicode=true&amp;characterEncoding=UTF-8
         </property>
         <property name="useUnicode">true</property>
         <property name="characterEncoding">UTF-8</property>
@@ -19,7 +19,7 @@
         <property name="username">root</property>
 
         <!--登录密码-->
-        <property name="password">bjmd2014</property>
+        <property name="password">123456</property>
 
         <property name="hibernate.connection.provider_class">
             org.guiceside.persistence.hibernate.support.DruidConnectionProvider
